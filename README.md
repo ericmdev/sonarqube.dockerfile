@@ -4,6 +4,10 @@
 
 **Dockerfile** of [Debian](https://www.debian.org/) [SonarQube](http://www.sonarqube.org/).
 
+<a href="doc/sonarqube.png">
+    <img src="doc/sonarqube.png" alt="SonarQube" width="500px">
+</a>
+
 *Requirements*
 - [Docker](https://www.docker.com/) 
 
@@ -31,6 +35,12 @@ Dig into the container.
 
 ### SonarQube
 
-Analyse a project:
+Access the SonarQube dashboard `http://<docker-machine ip>:9000/`.
+
+    # Default login
+    Username: admin
+    Password: admin
+
+Analyse a project.
 
     $ mvn sonar:sonar
